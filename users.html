@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Font awasome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Js charts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <!--JS texteara-->
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <title>Users</title>
+
+        <style>
+            .i
+            {
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="blue">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo">MyAdmin</a>
+                    <a href="" class="sidenav-trigger right" data-target="menusortant">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <button href="" class="sidenav-trigger right hide-on-med-and-down" data-target="menusortant" style="border: 0; background: none; color: white;">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="users.html">Users</a></li>
+                    </ul>
+                    <ul class="sidenav" id="menusortant">
+                        <div style="background: url('images/pexels-photo-1103970.webp') center/cover no-repeat; height: 300px;">
+                            <div>
+                                <img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" style="height: 150px; border-radius: 50%;">
+                                <h5>Richouf</h5>
+                                <h5><a href="">richouf@jidk.com</a></h5>
+                            </div>
+                        </div>
+                        <li><a href="index.html"><i class="fa-solid fa-table-cells-large"></i>Dashboard</a></li>
+                        <li><a href="posts.html">Posts</a></li>
+                        <li><a href="categories.html">Catégories</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="users.html">Users</a></li>
+                        <li><a href="" class="grey-text" style="border-top: 1px solid grey;">Account control</a></li>
+                        <li><a href="logout.html">LogOut</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <!--Tableau des users-->
+    <section>
+        <div class="container">
+            <div class="row p">
+                <h4>Users</h4>
+                    <table class="striped">
+                        <thead>
+                          <tr>
+                              <th>Title</th>
+                              <th>Nom</th>
+                              <th>Date Created</th>
+                              <th></th>
+                          </tr>
+                        </thead>
+                
+                        <tbody>
+                          <tr>
+                            <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 1, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 2, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 3, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 3, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 5, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 6, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                          <tr>
+                              <td><img src="images/User-Avatar-Profile-Clip-Art-Transparent-PNG.png" alt="" class="i"></td>
+                            <td>Rachida</td>
+                            <td>Octobre 7, 2019</td>
+                            <td><a href="" class="btn blue white-text">DETAILS</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                      </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Btn float-->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating blue modal-trigger" href="#modal1"><i class="fa-solid fa-pencil"></i></a></li> <!--Add Post-->
+          <li><a class="btn-floating blue modal-trigger" href="#modal2"><i class="fa-solid fa-folder"></i></a></li> <!--Add Catégorie-->
+          <li><a class="btn-floating blue modal-trigger" href="#modal3"><i class="fa-solid fa-user"></i></a></li> <!--Add User-->
+        </ul>
+    </div>
+
+    <!-- Modal Structure (Add Post)-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Add Post</h4>
+        <form action="">
+            <div>
+                <label for="titre"></label>
+                <input type="text" placeholder="Titre">
+            </div>
+            <div>
+                <label for="select"></label>
+                <div class="input-field col s12">
+                    <select>
+                      <option value="" disabled selected>Choose</option>
+                      <option value="1">Web Developement</option>
+                      <option value="2">Graphic Design</option>
+                      <option value="3">Business</option>
+                    </select>
+                    <label>Select Post</label>
+                </div>
+            </div>
+            <textarea></textarea>
+              <script>
+                tinymce.init({
+                  selector: 'textarea',
+                  plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+                  toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+                  toolbar_mode: 'floating',
+                  tinycomments_mode: 'embedded',
+                  tinycomments_author: 'Author name',
+                });
+              </script>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect btn-flat green">Submit</a>
+        </div>
+    </div>
+    <!-- Modal Structure (Add Post)-->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+        <h4>Add Cantégorie</h4>
+        <form action="">
+            <div>
+                <label for="titre"></label>
+                <input type="text" placeholder="Titre">
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat green">Submit</a>
+        </div>
+    </div>
+    <!-- Modal Structure (Add Post)-->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+        <h4>Add Users</h4>
+        <form action="">
+            <div>
+                <label for="name"></label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="text" placeholder="E-mail">
+            </div>
+            <div>
+                <label for="passxord"></label>
+                <input type="password" placeholder="Password">
+            </div>
+            <div>
+                <label for="confirmpassxord"></label>
+                <input type="password" placeholder="Confirm Password">
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close btn-flat green">Submit</a>
+        </div>
+    </div>
+     
+    
+    <footer class="blue center section" style="padding: 20px; position: fixed; bottom: 0; width: 100%;">
+        <h5>MyAdmin CodeLoccol Copyright &copy; 2019</h5>
+    </footer>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.modal').modal();
+            $('select').formSelect();
+        });
+    </script>
+    </body>
+</html>

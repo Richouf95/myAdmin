@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <!--Font awasome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Js charts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <!--JS texteara-->
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <title>LogOut</title>
+
+        <style>
+            .input, .container
+            {
+                width: 500px;
+            }
+
+            .padd
+            {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="blue">
+                <div class="nav-wrapper container">
+                    <a href="index.html" class="brand-logo center">MyAdmin</a>
+                </div>
+            </nav>
+    </header>
+
+    <!--Login-->
+    <section>
+        <div class="container center">
+            <h4>Connexion</h4>
+            <form action="" class="input grey lighten-4">
+                <div class=" padd">
+                    <label for="email"></label>
+                    <input type="text" placeholder="E-mail">
+                </div>
+                <div class=" padd">
+                    <label for="passxord"></label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="center padd">
+                    <a href="" class="btn green">Connexion</a>
+                </div>
+                <div>
+                    <p><a href="">Forgot password ?</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+     
+    
+    <footer class="blue center section" style="padding: 20px; position: fixed; bottom: 0; width: 100%;">
+        <h5>MyAdmin CodeLoccol Copyright &copy; 2019</h5>
+    </footer>
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.modal').modal();
+            $('select').formSelect();
+        });
+    </script>
+    </body>
+</html>
